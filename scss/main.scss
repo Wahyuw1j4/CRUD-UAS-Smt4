@@ -1,0 +1,146 @@
+// SASS Variables.
+$text: #000;
+$link: #e34234;
+$link-hover: #ba160c;
+$background: #00356B;
+
+canvas {
+    display: block;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: $background;
+}
+
+
+
+h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+a,
+a:visited {
+    color: $link;
+    transition: 0.25s;
+}
+
+a:hover,
+a:focus {
+    color: $link-hover;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: $text;
+    max-width: 97%;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    color: $text;
+    z-index: 1;
+
+    .footer {
+        margin-top: 1rem;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding: 12px 2px 12px 2px;
+        text-align: center;
+        background-color: $background;
+        color: white;
+    }
+
+    tr {
+        text-align: center;
+        padding: 1px;
+    }
+
+    table,
+    tr,
+    td {
+        border: 1px inset grey;
+    }
+
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 500px;
+    background-color: #fff;
+    display: block;
+    border-radius: 3px;
+
+    .cardd {
+        padding: 1rem;
+    }
+}
+
+.ubah {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -25%);
+    width: 700px;
+    height: 1200px;
+    background-color: #fff;
+    display: block;
+    border-radius: 3px;
+
+    .cardd {
+        padding: 1rem;
+    }
+
+}
+
+
+.alertform {
+    border-color: red;
+    height: 38px;
+    color: red;
+
+    &:active {
+        border-color: rgb(231, 233, 235);
+        color: white;
+    }
+}
+
+
+.displaynone {
+    &::after {
+        content: 'Silahkan isi kotak yang kosong!';
+        color: red;
+    }
+}
+
+.alert {
+    padding: 0 !important;
+    padding-left: 1rem !important;
+}
+
+.alert-dismissible .btn-close {
+    padding: 5px !important;
+}
